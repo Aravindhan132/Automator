@@ -20,6 +20,8 @@ enum FileTemplate {
                     screenmodel.screenKey = eachScreen.module
                     screenmodel.uuid = eachScreen.uid
 
+                    //AUTO GENERATING SEGMENTS :-
+
                     // FOR TOP NAVIGATION HEADER
                      screenmodel.topNavigationPatterns.append(eachScreen.prepareNavigationDataSource())
 

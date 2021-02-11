@@ -77,23 +77,23 @@ extension FileTemplate {
 
 
         let topNavigationpattern = screen.topNavigationPatterns.first?.patternKey ?? ""
-        var totalScreenProtocol = (screen.listPatterns.count == 0 && screen.containerPatterns.count == 0) ? "\n public protocol \(screen.screenKey)_DataProvider: \(topNavigationpattern)" : "\n public protocol \(screen.screenKey)_DataProvider: \(topNavigationpattern) , "
+        // var totalScreenProtocol = (screen.listPatterns.count == 0 && screen.containerPatterns.count == 0) ? "\n public protocol \(screen.screenKey)_DataProvider: \(topNavigationpattern)" : "\n public protocol \(screen.screenKey)_DataProvider: \(topNavigationpattern) , "
 
-        screen.listPatterns.enumerated().forEach { (index , eachpattern) in
-            let content = (index == (screen.listPatterns.count - 1)) ? "\(eachpattern.patternKey)  { \n }" : "\(eachpattern.patternKey) , "
-            totalScreenProtocol += content
-        }
+        // screen.listPatterns.enumerated().forEach { (index , eachpattern) in
+        //     let content = (index == (screen.listPatterns.count - 1)) ? "\(eachpattern.patternKey)  { \n }" : "\(eachpattern.patternKey) , "
+        //     totalScreenProtocol += content
+        // }
 
-        screen.containerPatterns.enumerated().forEach { (index , eachpattern) in
-            let content = (index == (screen.containerPatterns.count - 1)) ? "\(eachpattern.patternKey) " : "\(eachpattern.patternKey) , "
-            totalScreenProtocol += content
-        }
+        // screen.containerPatterns.enumerated().forEach { (index , eachpattern) in
+        //     let content = (index == (screen.containerPatterns.count - 1)) ? "\(eachpattern.patternKey) " : "\(eachpattern.patternKey) , "
+        //     totalScreenProtocol += content
+        // }
 
-        if screen.listPatterns.count == 0 {
-            totalScreenProtocol += " { } \n "
-        }
+        // if screen.listPatterns.count == 0 {
+        //     totalScreenProtocol += " { } \n "
+        // }
         
-        return begin_content + totalScreenProtocol
+        return begin_content //+ totalScreenProtocol
     }
 
 

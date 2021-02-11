@@ -14,7 +14,7 @@ class APIRequester {
                             onCompletion?(model)
                         }
                         catch let error {
-                           print(error)
+                          print("Not decoded" , error)
                         }
                     } else {
                         print("Un-Formated Data")

@@ -28,7 +28,7 @@ class DataItemsGenerator {
             
             public typealias ImageValues = (image: UIImage? , icon: UIFont?)
 
-            public protocol Base_DataProvider { }
+            //public protocol Base_DataProvider { }
 
             public class DataItem: NSObject  {
                 

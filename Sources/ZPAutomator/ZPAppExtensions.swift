@@ -151,8 +151,10 @@ extension ZPScreen {
             }
         }
         
-        
+        print(listitems?.patterns.count)
         listitems?.patterns.forEach({ (eachPattern) in
+            if totalpatterns.filter({$0.patternKey == eachPattern.key}).count > 0 {return}
+            print(eachPattern.key , self.module , totalpatterns.filter({$0.patternKey == eachPattern.key}).count )
             var patternmodel = PattenModel()
             patternmodel.patternKey = "\(self.module)_SectionHeader_\(eachPattern.key)_DataProvider"
             prepareDynamicItems(item: eachPattern, model: &patternmodel, patternName: eachPattern.key)

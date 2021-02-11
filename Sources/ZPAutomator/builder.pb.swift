@@ -20,6 +20,50 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
   typealias Version = _2
 }
 
+enum ZPUIStateType: SwiftProtobuf.Enum {
+  typealias RawValue = Int
+  case dataError // = 0
+  case networkError // = 1
+  case noData // = 2
+  case UNRECOGNIZED(Int)
+
+  init() {
+    self = .dataError
+  }
+
+  init?(rawValue: Int) {
+    switch rawValue {
+    case 0: self = .dataError
+    case 1: self = .networkError
+    case 2: self = .noData
+    default: self = .UNRECOGNIZED(rawValue)
+    }
+  }
+
+  var rawValue: Int {
+    switch self {
+    case .dataError: return 0
+    case .networkError: return 1
+    case .noData: return 2
+    case .UNRECOGNIZED(let i): return i
+    }
+  }
+
+}
+
+#if swift(>=4.2)
+
+extension ZPUIStateType: CaseIterable {
+  // The compiler won't synthesize support with the UNRECOGNIZED case.
+  static var allCases: [ZPUIStateType] = [
+    .dataError,
+    .networkError,
+    .noData,
+  ]
+}
+
+#endif  // swift(>=4.2)
+
 enum ZPScreenType: SwiftProtobuf.Enum {
   typealias RawValue = Int
   case list // = 0
@@ -29,6 +73,14 @@ enum ZPScreenType: SwiftProtobuf.Enum {
   case editList // = 4
   case chat // = 5
   case actionSheet // = 6
+  case imagePicker // = 7
+  case documentPicker // = 8
+  case liveCameraPicker // = 9
+  case liveVideoPicker // = 10
+  case audioPreview // = 11
+  case videoPreview // = 12
+  case imagePreview // = 13
+  case documentPreview // = 14
   case UNRECOGNIZED(Int)
 
   init() {
@@ -44,6 +96,14 @@ enum ZPScreenType: SwiftProtobuf.Enum {
     case 4: self = .editList
     case 5: self = .chat
     case 6: self = .actionSheet
+    case 7: self = .imagePicker
+    case 8: self = .documentPicker
+    case 9: self = .liveCameraPicker
+    case 10: self = .liveVideoPicker
+    case 11: self = .audioPreview
+    case 12: self = .videoPreview
+    case 13: self = .imagePreview
+    case 14: self = .documentPreview
     default: self = .UNRECOGNIZED(rawValue)
     }
   }
@@ -57,6 +117,14 @@ enum ZPScreenType: SwiftProtobuf.Enum {
     case .editList: return 4
     case .chat: return 5
     case .actionSheet: return 6
+    case .imagePicker: return 7
+    case .documentPicker: return 8
+    case .liveCameraPicker: return 9
+    case .liveVideoPicker: return 10
+    case .audioPreview: return 11
+    case .videoPreview: return 12
+    case .imagePreview: return 13
+    case .documentPreview: return 14
     case .UNRECOGNIZED(let i): return i
     }
   }
@@ -75,6 +143,14 @@ extension ZPScreenType: CaseIterable {
     .editList,
     .chat,
     .actionSheet,
+    .imagePicker,
+    .documentPicker,
+    .liveCameraPicker,
+    .liveVideoPicker,
+    .audioPreview,
+    .videoPreview,
+    .imagePreview,
+    .documentPreview,
   ]
 }
 
@@ -192,27 +268,28 @@ enum ZPItemType: SwiftProtobuf.Enum {
   case label // = 3
   case button // = 4
   case textInput // = 5
-  case textView // = 6
-  case iconView // = 7
-  case imageView // = 8
-  case seperatorView // = 9
-  case webView // = 10
-  case scrollView // = 11
-  case gridView // = 12
-  case chipView // = 13
-  case popUpView // = 14
-  case progressView // = 15
-  case checkBoxView // = 16
-  case chartView // = 17
-  case tabLayoutViewPager // = 18
-  case pagingView // = 19
-  case page // = 20
-  case tabView // = 21
-  case tabViewIndicator // = 22
-  case listView // = 23
-  case loader // = 24
-  case rightBarButton // = 25
-  case leftBarButton // = 26
+  case materialTextInput // = 6
+  case textView // = 7
+  case iconView // = 8
+  case imageView // = 9
+  case separatorView // = 10
+  case webView // = 11
+  case scrollView // = 12
+  case gridView // = 13
+  case chipView // = 14
+  case popUpView // = 15
+  case progressView // = 16
+  case checkBoxView // = 17
+  case chartView // = 18
+  case tabLayoutViewPager // = 19
+  case pagingView // = 20
+  case page // = 21
+  case tabView // = 22
+  case tabViewIndicator // = 23
+  case listView // = 24
+  case loader // = 25
+  case rightBarButton // = 26
+  case leftBarButton // = 27
   case UNRECOGNIZED(Int)
 
   init() {
@@ -227,27 +304,28 @@ enum ZPItemType: SwiftProtobuf.Enum {
     case 3: self = .label
     case 4: self = .button
     case 5: self = .textInput
-    case 6: self = .textView
-    case 7: self = .iconView
-    case 8: self = .imageView
-    case 9: self = .seperatorView
-    case 10: self = .webView
-    case 11: self = .scrollView
-    case 12: self = .gridView
-    case 13: self = .chipView
-    case 14: self = .popUpView
-    case 15: self = .progressView
-    case 16: self = .checkBoxView
-    case 17: self = .chartView
-    case 18: self = .tabLayoutViewPager
-    case 19: self = .pagingView
-    case 20: self = .page
-    case 21: self = .tabView
-    case 22: self = .tabViewIndicator
-    case 23: self = .listView
-    case 24: self = .loader
-    case 25: self = .rightBarButton
-    case 26: self = .leftBarButton
+    case 6: self = .materialTextInput
+    case 7: self = .textView
+    case 8: self = .iconView
+    case 9: self = .imageView
+    case 10: self = .separatorView
+    case 11: self = .webView
+    case 12: self = .scrollView
+    case 13: self = .gridView
+    case 14: self = .chipView
+    case 15: self = .popUpView
+    case 16: self = .progressView
+    case 17: self = .checkBoxView
+    case 18: self = .chartView
+    case 19: self = .tabLayoutViewPager
+    case 20: self = .pagingView
+    case 21: self = .page
+    case 22: self = .tabView
+    case 23: self = .tabViewIndicator
+    case 24: self = .listView
+    case 25: self = .loader
+    case 26: self = .rightBarButton
+    case 27: self = .leftBarButton
     default: self = .UNRECOGNIZED(rawValue)
     }
   }
@@ -260,27 +338,28 @@ enum ZPItemType: SwiftProtobuf.Enum {
     case .label: return 3
     case .button: return 4
     case .textInput: return 5
-    case .textView: return 6
-    case .iconView: return 7
-    case .imageView: return 8
-    case .seperatorView: return 9
-    case .webView: return 10
-    case .scrollView: return 11
-    case .gridView: return 12
-    case .chipView: return 13
-    case .popUpView: return 14
-    case .progressView: return 15
-    case .checkBoxView: return 16
-    case .chartView: return 17
-    case .tabLayoutViewPager: return 18
-    case .pagingView: return 19
-    case .page: return 20
-    case .tabView: return 21
-    case .tabViewIndicator: return 22
-    case .listView: return 23
-    case .loader: return 24
-    case .rightBarButton: return 25
-    case .leftBarButton: return 26
+    case .materialTextInput: return 6
+    case .textView: return 7
+    case .iconView: return 8
+    case .imageView: return 9
+    case .separatorView: return 10
+    case .webView: return 11
+    case .scrollView: return 12
+    case .gridView: return 13
+    case .chipView: return 14
+    case .popUpView: return 15
+    case .progressView: return 16
+    case .checkBoxView: return 17
+    case .chartView: return 18
+    case .tabLayoutViewPager: return 19
+    case .pagingView: return 20
+    case .page: return 21
+    case .tabView: return 22
+    case .tabViewIndicator: return 23
+    case .listView: return 24
+    case .loader: return 25
+    case .rightBarButton: return 26
+    case .leftBarButton: return 27
     case .UNRECOGNIZED(let i): return i
     }
   }
@@ -298,10 +377,11 @@ extension ZPItemType: CaseIterable {
     .label,
     .button,
     .textInput,
+    .materialTextInput,
     .textView,
     .iconView,
     .imageView,
-    .seperatorView,
+    .separatorView,
     .webView,
     .scrollView,
     .gridView,
@@ -388,6 +468,62 @@ extension ZPInputType: CaseIterable {
 
 #endif  // swift(>=4.2)
 
+enum ZPDevicePermissionType: SwiftProtobuf.Enum {
+  typealias RawValue = Int
+  case cameraAccess // = 0
+  case readFileAccess // = 1
+  case writeFileAccess // = 2
+  case photoGalleryAccess // = 3
+  case locationAccess // = 4
+  case contactAccess // = 5
+  case UNRECOGNIZED(Int)
+
+  init() {
+    self = .cameraAccess
+  }
+
+  init?(rawValue: Int) {
+    switch rawValue {
+    case 0: self = .cameraAccess
+    case 1: self = .readFileAccess
+    case 2: self = .writeFileAccess
+    case 3: self = .photoGalleryAccess
+    case 4: self = .locationAccess
+    case 5: self = .contactAccess
+    default: self = .UNRECOGNIZED(rawValue)
+    }
+  }
+
+  var rawValue: Int {
+    switch self {
+    case .cameraAccess: return 0
+    case .readFileAccess: return 1
+    case .writeFileAccess: return 2
+    case .photoGalleryAccess: return 3
+    case .locationAccess: return 4
+    case .contactAccess: return 5
+    case .UNRECOGNIZED(let i): return i
+    }
+  }
+
+}
+
+#if swift(>=4.2)
+
+extension ZPDevicePermissionType: CaseIterable {
+  // The compiler won't synthesize support with the UNRECOGNIZED case.
+  static var allCases: [ZPDevicePermissionType] = [
+    .cameraAccess,
+    .readFileAccess,
+    .writeFileAccess,
+    .photoGalleryAccess,
+    .locationAccess,
+    .contactAccess,
+  ]
+}
+
+#endif  // swift(>=4.2)
+
 struct ZPApp {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
@@ -401,9 +537,34 @@ struct ZPApp {
 
   var fontStyles: [ZPFontStyle] = []
 
+  var uiStates: [ZPScreenState] = []
+
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
   init() {}
+}
+
+struct ZPScreenState {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  var uiState: ZPUIStateType = .dataError
+
+  var containerSegment: ZPSegment {
+    get {return _containerSegment ?? ZPSegment()}
+    set {_containerSegment = newValue}
+  }
+  /// Returns true if `containerSegment` has been explicitly set.
+  var hasContainerSegment: Bool {return self._containerSegment != nil}
+  /// Clears the value of `containerSegment`. Subsequent reads from it will return its default value.
+  mutating func clearContainerSegment() {self._containerSegment = nil}
+
+  var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  init() {}
+
+  fileprivate var _containerSegment: ZPSegment? = nil
 }
 
 struct ZPScreen {
@@ -413,6 +574,8 @@ struct ZPScreen {
 
   ///Make it as UUID
   var uid: String = String()
+
+  var rUid: String = String()
 
   var module: String = String()
 
@@ -429,12 +592,56 @@ struct ZPScreen {
   /// Clears the value of `passOnAction`. Subsequent reads from it will return its default value.
   mutating func clearPassOnAction() {self._passOnAction = nil}
 
+  var devicePermissions: [ZPDevicePermissionType] = []
+
+  var typeOfrender: ZPScreen.ZPRenderType = .dynamic
+
   var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  enum ZPRenderType: SwiftProtobuf.Enum {
+    typealias RawValue = Int
+    case dynamic // = 0
+    case `static` // = 1
+    case UNRECOGNIZED(Int)
+
+    init() {
+      self = .dynamic
+    }
+
+    init?(rawValue: Int) {
+      switch rawValue {
+      case 0: self = .dynamic
+      case 1: self = .static
+      default: self = .UNRECOGNIZED(rawValue)
+      }
+    }
+
+    var rawValue: Int {
+      switch self {
+      case .dynamic: return 0
+      case .static: return 1
+      case .UNRECOGNIZED(let i): return i
+      }
+    }
+
+  }
 
   init() {}
 
   fileprivate var _passOnAction: ZPAction? = nil
 }
+
+#if swift(>=4.2)
+
+extension ZPScreen.ZPRenderType: CaseIterable {
+  // The compiler won't synthesize support with the UNRECOGNIZED case.
+  static var allCases: [ZPScreen.ZPRenderType] = [
+    .dynamic,
+    .static,
+  ]
+}
+
+#endif  // swift(>=4.2)
 
 struct ZPSegment {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -465,9 +672,39 @@ struct ZPSegment {
 
   var patterns: [ZPItem] = []
 
+  var typeOfrender: ZPSegment.ZPRenderType = .dynamic
+
   var isNative: Bool = false
 
   var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  enum ZPRenderType: SwiftProtobuf.Enum {
+    typealias RawValue = Int
+    case dynamic // = 0
+    case `static` // = 1
+    case UNRECOGNIZED(Int)
+
+    init() {
+      self = .dynamic
+    }
+
+    init?(rawValue: Int) {
+      switch rawValue {
+      case 0: self = .dynamic
+      case 1: self = .static
+      default: self = .UNRECOGNIZED(rawValue)
+      }
+    }
+
+    var rawValue: Int {
+      switch self {
+      case .dynamic: return 0
+      case .static: return 1
+      case .UNRECOGNIZED(let i): return i
+      }
+    }
+
+  }
 
   enum ZPSegmentType: SwiftProtobuf.Enum {
     typealias RawValue = Int
@@ -528,6 +765,14 @@ struct ZPSegment {
 }
 
 #if swift(>=4.2)
+
+extension ZPSegment.ZPRenderType: CaseIterable {
+  // The compiler won't synthesize support with the UNRECOGNIZED case.
+  static var allCases: [ZPSegment.ZPRenderType] = [
+    .dynamic,
+    .static,
+  ]
+}
 
 extension ZPSegment.ZPSegmentType: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
@@ -626,9 +871,18 @@ struct ZPItemStyle {
   /// Clears the value of `textStyle`. Subsequent reads from it will return its default value.
   mutating func clearTextStyle() {_uniqueStorage()._textStyle = nil}
 
-  var seperatorType: ZPItemStyle.ZPSeparatorType {
-    get {return _storage._seperatorType}
-    set {_uniqueStorage()._seperatorType = newValue}
+  var sectionStyle: ZPListSectionStyle {
+    get {return _storage._sectionStyle ?? ZPListSectionStyle()}
+    set {_uniqueStorage()._sectionStyle = newValue}
+  }
+  /// Returns true if `sectionStyle` has been explicitly set.
+  var hasSectionStyle: Bool {return _storage._sectionStyle != nil}
+  /// Clears the value of `sectionStyle`. Subsequent reads from it will return its default value.
+  mutating func clearSectionStyle() {_uniqueStorage()._sectionStyle = nil}
+
+  var separatorType: ZPItemStyle.ZPSeparatorType {
+    get {return _storage._separatorType}
+    set {_uniqueStorage()._separatorType = newValue}
   }
 
   var tabViewType: ZPItemStyle.ZPTabViewType {
@@ -1028,6 +1282,8 @@ struct ZPTextStyle {
 
   var alignment: ZPTextStyle.ZPTextAlignment = .left
 
+  var textColorID: String = String()
+
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
   enum ZPTextAlignment: SwiftProtobuf.Enum {
@@ -1092,6 +1348,20 @@ extension ZPTextStyle.ZPTextAlignment: CaseIterable {
 }
 
 #endif  // swift(>=4.2)
+
+struct ZPListSectionStyle {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  var listPatternID: String = String()
+
+  var numberOfItems: Int32 = 0
+
+  var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  init() {}
+}
 
 struct ZPSizeAttribute {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -1391,6 +1661,8 @@ struct ZPAction {
 
   var uiActionType: ZPActionType = .none
 
+  var devicePermissions: [ZPDevicePermissionType] = []
+
   var navigations: [ZPNavigation] = []
 
   var unknownFields = SwiftProtobuf.UnknownStorage()
@@ -1422,14 +1694,6 @@ struct ZPNavigation {
     case root // = 3
     case search // = 4
     case actionSheet // = 5
-    case imagePicker // = 6
-    case documentPicker // = 7
-    case liveCameraPicker // = 8
-    case liveVideoPicker // = 9
-    case audioPreview // = 10
-    case videoPreview // = 11
-    case imagePreview // = 12
-    case documentPreview // = 13
     case UNRECOGNIZED(Int)
 
     init() {
@@ -1444,14 +1708,6 @@ struct ZPNavigation {
       case 3: self = .root
       case 4: self = .search
       case 5: self = .actionSheet
-      case 6: self = .imagePicker
-      case 7: self = .documentPicker
-      case 8: self = .liveCameraPicker
-      case 9: self = .liveVideoPicker
-      case 10: self = .audioPreview
-      case 11: self = .videoPreview
-      case 12: self = .imagePreview
-      case 13: self = .documentPreview
       default: self = .UNRECOGNIZED(rawValue)
       }
     }
@@ -1464,14 +1720,6 @@ struct ZPNavigation {
       case .root: return 3
       case .search: return 4
       case .actionSheet: return 5
-      case .imagePicker: return 6
-      case .documentPicker: return 7
-      case .liveCameraPicker: return 8
-      case .liveVideoPicker: return 9
-      case .audioPreview: return 10
-      case .videoPreview: return 11
-      case .imagePreview: return 12
-      case .documentPreview: return 13
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -1492,14 +1740,6 @@ extension ZPNavigation.ZPTransitionType: CaseIterable {
     .root,
     .search,
     .actionSheet,
-    .imagePicker,
-    .documentPicker,
-    .liveCameraPicker,
-    .liveVideoPicker,
-    .audioPreview,
-    .videoPreview,
-    .imagePreview,
-    .documentPreview,
   ]
 }
 
@@ -1695,8 +1935,6 @@ struct ZPFontStyle {
 
   var fontWeight: ZPFontStyle.ZPFontWeightType = .ultraLight
 
-  var textColorID: String = String()
-
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
   enum ZPFontWeightType: SwiftProtobuf.Enum {
@@ -1772,6 +2010,14 @@ extension ZPFontStyle.ZPFontWeightType: CaseIterable {
 
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
+extension ZPUIStateType: SwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "dataError"),
+    1: .same(proto: "networkError"),
+    2: .same(proto: "noData"),
+  ]
+}
+
 extension ZPScreenType: SwiftProtobuf._ProtoNameProviding {
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "list"),
@@ -1781,6 +2027,14 @@ extension ZPScreenType: SwiftProtobuf._ProtoNameProviding {
     4: .same(proto: "editList"),
     5: .same(proto: "chat"),
     6: .same(proto: "actionSheet"),
+    7: .same(proto: "imagePicker"),
+    8: .same(proto: "documentPicker"),
+    9: .same(proto: "liveCameraPicker"),
+    10: .same(proto: "liveVideoPicker"),
+    11: .same(proto: "audioPreview"),
+    12: .same(proto: "videoPreview"),
+    13: .same(proto: "imagePreview"),
+    14: .same(proto: "documentPreview"),
   ]
 }
 
@@ -1812,27 +2066,28 @@ extension ZPItemType: SwiftProtobuf._ProtoNameProviding {
     3: .same(proto: "label"),
     4: .same(proto: "button"),
     5: .same(proto: "textInput"),
-    6: .same(proto: "textView"),
-    7: .same(proto: "iconView"),
-    8: .same(proto: "imageView"),
-    9: .same(proto: "seperatorView"),
-    10: .same(proto: "webView"),
-    11: .same(proto: "scrollView"),
-    12: .same(proto: "gridView"),
-    13: .same(proto: "chipView"),
-    14: .same(proto: "popUpView"),
-    15: .same(proto: "progressView"),
-    16: .same(proto: "checkBoxView"),
-    17: .same(proto: "chartView"),
-    18: .same(proto: "tabLayoutViewPager"),
-    19: .same(proto: "pagingView"),
-    20: .same(proto: "page"),
-    21: .same(proto: "tabView"),
-    22: .same(proto: "tabViewIndicator"),
-    23: .same(proto: "listView"),
-    24: .same(proto: "loader"),
-    25: .same(proto: "rightBarButton"),
-    26: .same(proto: "leftBarButton"),
+    6: .same(proto: "materialTextInput"),
+    7: .same(proto: "textView"),
+    8: .same(proto: "iconView"),
+    9: .same(proto: "imageView"),
+    10: .same(proto: "separatorView"),
+    11: .same(proto: "webView"),
+    12: .same(proto: "scrollView"),
+    13: .same(proto: "gridView"),
+    14: .same(proto: "chipView"),
+    15: .same(proto: "popUpView"),
+    16: .same(proto: "progressView"),
+    17: .same(proto: "checkBoxView"),
+    18: .same(proto: "chartView"),
+    19: .same(proto: "tabLayoutViewPager"),
+    20: .same(proto: "pagingView"),
+    21: .same(proto: "page"),
+    22: .same(proto: "tabView"),
+    23: .same(proto: "tabViewIndicator"),
+    24: .same(proto: "listView"),
+    25: .same(proto: "loader"),
+    26: .same(proto: "rightBarButton"),
+    27: .same(proto: "leftBarButton"),
   ]
 }
 
@@ -1849,6 +2104,17 @@ extension ZPInputType: SwiftProtobuf._ProtoNameProviding {
   ]
 }
 
+extension ZPDevicePermissionType: SwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "cameraAccess"),
+    1: .same(proto: "readFileAccess"),
+    2: .same(proto: "writeFileAccess"),
+    3: .same(proto: "photoGalleryAccess"),
+    4: .same(proto: "locationAccess"),
+    5: .same(proto: "contactAccess"),
+  ]
+}
+
 extension ZPApp: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = "ZPApp"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
@@ -1856,6 +2122,7 @@ extension ZPApp: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase
     2: .same(proto: "darkColors"),
     3: .same(proto: "lightColors"),
     4: .same(proto: "fontStyles"),
+    5: .same(proto: "uiStates"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -1868,6 +2135,7 @@ extension ZPApp: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase
       case 2: try { try decoder.decodeRepeatedMessageField(value: &self.darkColors) }()
       case 3: try { try decoder.decodeRepeatedMessageField(value: &self.lightColors) }()
       case 4: try { try decoder.decodeRepeatedMessageField(value: &self.fontStyles) }()
+      case 5: try { try decoder.decodeRepeatedMessageField(value: &self.uiStates) }()
       default: break
       }
     }
@@ -1886,6 +2154,9 @@ extension ZPApp: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase
     if !self.fontStyles.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.fontStyles, fieldNumber: 4)
     }
+    if !self.uiStates.isEmpty {
+      try visitor.visitRepeatedMessageField(value: self.uiStates, fieldNumber: 5)
+    }
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -1894,6 +2165,45 @@ extension ZPApp: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase
     if lhs.darkColors != rhs.darkColors {return false}
     if lhs.lightColors != rhs.lightColors {return false}
     if lhs.fontStyles != rhs.fontStyles {return false}
+    if lhs.uiStates != rhs.uiStates {return false}
+    if lhs.unknownFields != rhs.unknownFields {return false}
+    return true
+  }
+}
+
+extension ZPScreenState: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = "ZPScreenState"
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "uiState"),
+    2: .same(proto: "containerSegment"),
+  ]
+
+  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      // The use of inline closures is to circumvent an issue where the compiler
+      // allocates stack space for every case branch when no optimizations are
+      // enabled. https://github.com/apple/swift-protobuf/issues/1034
+      switch fieldNumber {
+      case 1: try { try decoder.decodeSingularEnumField(value: &self.uiState) }()
+      case 2: try { try decoder.decodeSingularMessageField(value: &self._containerSegment) }()
+      default: break
+      }
+    }
+  }
+
+  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if self.uiState != .dataError {
+      try visitor.visitSingularEnumField(value: self.uiState, fieldNumber: 1)
+    }
+    if let v = self._containerSegment {
+      try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  static func ==(lhs: ZPScreenState, rhs: ZPScreenState) -> Bool {
+    if lhs.uiState != rhs.uiState {return false}
+    if lhs._containerSegment != rhs._containerSegment {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
@@ -1903,10 +2213,13 @@ extension ZPScreen: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationB
   static let protoMessageName: String = "ZPScreen"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "uid"),
-    2: .same(proto: "module"),
-    3: .same(proto: "screenType"),
-    4: .same(proto: "segments"),
-    5: .same(proto: "passOnAction"),
+    2: .standard(proto: "r_uid"),
+    3: .same(proto: "module"),
+    4: .same(proto: "screenType"),
+    5: .same(proto: "segments"),
+    6: .same(proto: "passOnAction"),
+    7: .same(proto: "devicePermissions"),
+    8: .same(proto: "typeOfrender"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -1916,10 +2229,13 @@ extension ZPScreen: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationB
       // enabled. https://github.com/apple/swift-protobuf/issues/1034
       switch fieldNumber {
       case 1: try { try decoder.decodeSingularStringField(value: &self.uid) }()
-      case 2: try { try decoder.decodeSingularStringField(value: &self.module) }()
-      case 3: try { try decoder.decodeSingularEnumField(value: &self.screenType) }()
-      case 4: try { try decoder.decodeRepeatedMessageField(value: &self.segments) }()
-      case 5: try { try decoder.decodeSingularMessageField(value: &self._passOnAction) }()
+      case 2: try { try decoder.decodeSingularStringField(value: &self.rUid) }()
+      case 3: try { try decoder.decodeSingularStringField(value: &self.module) }()
+      case 4: try { try decoder.decodeSingularEnumField(value: &self.screenType) }()
+      case 5: try { try decoder.decodeRepeatedMessageField(value: &self.segments) }()
+      case 6: try { try decoder.decodeSingularMessageField(value: &self._passOnAction) }()
+      case 7: try { try decoder.decodeRepeatedEnumField(value: &self.devicePermissions) }()
+      case 8: try { try decoder.decodeSingularEnumField(value: &self.typeOfrender) }()
       default: break
       }
     }
@@ -1929,30 +2245,49 @@ extension ZPScreen: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationB
     if !self.uid.isEmpty {
       try visitor.visitSingularStringField(value: self.uid, fieldNumber: 1)
     }
+    if !self.rUid.isEmpty {
+      try visitor.visitSingularStringField(value: self.rUid, fieldNumber: 2)
+    }
     if !self.module.isEmpty {
-      try visitor.visitSingularStringField(value: self.module, fieldNumber: 2)
+      try visitor.visitSingularStringField(value: self.module, fieldNumber: 3)
     }
     if self.screenType != .list {
-      try visitor.visitSingularEnumField(value: self.screenType, fieldNumber: 3)
+      try visitor.visitSingularEnumField(value: self.screenType, fieldNumber: 4)
     }
     if !self.segments.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.segments, fieldNumber: 4)
+      try visitor.visitRepeatedMessageField(value: self.segments, fieldNumber: 5)
     }
     if let v = self._passOnAction {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 5)
+      try visitor.visitSingularMessageField(value: v, fieldNumber: 6)
+    }
+    if !self.devicePermissions.isEmpty {
+      try visitor.visitPackedEnumField(value: self.devicePermissions, fieldNumber: 7)
+    }
+    if self.typeOfrender != .dynamic {
+      try visitor.visitSingularEnumField(value: self.typeOfrender, fieldNumber: 8)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
   static func ==(lhs: ZPScreen, rhs: ZPScreen) -> Bool {
     if lhs.uid != rhs.uid {return false}
+    if lhs.rUid != rhs.rUid {return false}
     if lhs.module != rhs.module {return false}
     if lhs.screenType != rhs.screenType {return false}
     if lhs.segments != rhs.segments {return false}
     if lhs._passOnAction != rhs._passOnAction {return false}
+    if lhs.devicePermissions != rhs.devicePermissions {return false}
+    if lhs.typeOfrender != rhs.typeOfrender {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
+}
+
+extension ZPScreen.ZPRenderType: SwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "dynamic"),
+    1: .same(proto: "static"),
+  ]
 }
 
 extension ZPSegment: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
@@ -1963,7 +2298,8 @@ extension ZPSegment: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     3: .same(proto: "segmentSizeAttribute"),
     4: .same(proto: "actions"),
     5: .same(proto: "patterns"),
-    6: .same(proto: "isNative"),
+    6: .same(proto: "typeOfrender"),
+    7: .same(proto: "isNative"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -1977,7 +2313,8 @@ extension ZPSegment: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
       case 3: try { try decoder.decodeSingularMessageField(value: &self._segmentSizeAttribute) }()
       case 4: try { try decoder.decodeRepeatedMessageField(value: &self.actions) }()
       case 5: try { try decoder.decodeRepeatedMessageField(value: &self.patterns) }()
-      case 6: try { try decoder.decodeSingularBoolField(value: &self.isNative) }()
+      case 6: try { try decoder.decodeSingularEnumField(value: &self.typeOfrender) }()
+      case 7: try { try decoder.decodeSingularBoolField(value: &self.isNative) }()
       default: break
       }
     }
@@ -1999,8 +2336,11 @@ extension ZPSegment: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     if !self.patterns.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.patterns, fieldNumber: 5)
     }
+    if self.typeOfrender != .dynamic {
+      try visitor.visitSingularEnumField(value: self.typeOfrender, fieldNumber: 6)
+    }
     if self.isNative != false {
-      try visitor.visitSingularBoolField(value: self.isNative, fieldNumber: 6)
+      try visitor.visitSingularBoolField(value: self.isNative, fieldNumber: 7)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -2011,10 +2351,18 @@ extension ZPSegment: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     if lhs._segmentSizeAttribute != rhs._segmentSizeAttribute {return false}
     if lhs.actions != rhs.actions {return false}
     if lhs.patterns != rhs.patterns {return false}
+    if lhs.typeOfrender != rhs.typeOfrender {return false}
     if lhs.isNative != rhs.isNative {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
+}
+
+extension ZPSegment.ZPRenderType: SwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "dynamic"),
+    1: .same(proto: "static"),
+  ]
 }
 
 extension ZPSegment.ZPSegmentType: SwiftProtobuf._ProtoNameProviding {
@@ -2044,9 +2392,10 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     7: .same(proto: "gridStyle"),
     8: .same(proto: "scrollStyle"),
     9: .same(proto: "textStyle"),
-    10: .same(proto: "seperatorType"),
-    11: .same(proto: "tabViewType"),
-    12: .same(proto: "cornerRadius"),
+    10: .same(proto: "sectionStyle"),
+    11: .same(proto: "separatorType"),
+    12: .same(proto: "tabViewType"),
+    13: .same(proto: "cornerRadius"),
   ]
 
   fileprivate class _StorageClass {
@@ -2059,7 +2408,8 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     var _gridStyle: ZPGridStyle? = nil
     var _scrollStyle: ZPScrollStyle? = nil
     var _textStyle: ZPTextStyle? = nil
-    var _seperatorType: ZPItemStyle.ZPSeparatorType = .line
+    var _sectionStyle: ZPListSectionStyle? = nil
+    var _separatorType: ZPItemStyle.ZPSeparatorType = .line
     var _tabViewType: ZPItemStyle.ZPTabViewType = .segment
     var _cornerRadius: ZPItemStyle.ZPItemCornerRadius? = nil
 
@@ -2077,7 +2427,8 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
       _gridStyle = source._gridStyle
       _scrollStyle = source._scrollStyle
       _textStyle = source._textStyle
-      _seperatorType = source._seperatorType
+      _sectionStyle = source._sectionStyle
+      _separatorType = source._separatorType
       _tabViewType = source._tabViewType
       _cornerRadius = source._cornerRadius
     }
@@ -2107,9 +2458,10 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
         case 7: try { try decoder.decodeSingularMessageField(value: &_storage._gridStyle) }()
         case 8: try { try decoder.decodeSingularMessageField(value: &_storage._scrollStyle) }()
         case 9: try { try decoder.decodeSingularMessageField(value: &_storage._textStyle) }()
-        case 10: try { try decoder.decodeSingularEnumField(value: &_storage._seperatorType) }()
-        case 11: try { try decoder.decodeSingularEnumField(value: &_storage._tabViewType) }()
-        case 12: try { try decoder.decodeSingularMessageField(value: &_storage._cornerRadius) }()
+        case 10: try { try decoder.decodeSingularMessageField(value: &_storage._sectionStyle) }()
+        case 11: try { try decoder.decodeSingularEnumField(value: &_storage._separatorType) }()
+        case 12: try { try decoder.decodeSingularEnumField(value: &_storage._tabViewType) }()
+        case 13: try { try decoder.decodeSingularMessageField(value: &_storage._cornerRadius) }()
         default: break
         }
       }
@@ -2145,14 +2497,17 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
       if let v = _storage._textStyle {
         try visitor.visitSingularMessageField(value: v, fieldNumber: 9)
       }
-      if _storage._seperatorType != .line {
-        try visitor.visitSingularEnumField(value: _storage._seperatorType, fieldNumber: 10)
+      if let v = _storage._sectionStyle {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 10)
+      }
+      if _storage._separatorType != .line {
+        try visitor.visitSingularEnumField(value: _storage._separatorType, fieldNumber: 11)
       }
       if _storage._tabViewType != .segment {
-        try visitor.visitSingularEnumField(value: _storage._tabViewType, fieldNumber: 11)
+        try visitor.visitSingularEnumField(value: _storage._tabViewType, fieldNumber: 12)
       }
       if let v = _storage._cornerRadius {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 12)
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 13)
       }
     }
     try unknownFields.traverse(visitor: &visitor)
@@ -2172,7 +2527,8 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
         if _storage._gridStyle != rhs_storage._gridStyle {return false}
         if _storage._scrollStyle != rhs_storage._scrollStyle {return false}
         if _storage._textStyle != rhs_storage._textStyle {return false}
-        if _storage._seperatorType != rhs_storage._seperatorType {return false}
+        if _storage._sectionStyle != rhs_storage._sectionStyle {return false}
+        if _storage._separatorType != rhs_storage._separatorType {return false}
         if _storage._tabViewType != rhs_storage._tabViewType {return false}
         if _storage._cornerRadius != rhs_storage._cornerRadius {return false}
         return true
@@ -2575,6 +2931,7 @@ extension ZPTextStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     2: .same(proto: "isEditable"),
     3: .same(proto: "maxLines"),
     4: .same(proto: "alignment"),
+    5: .standard(proto: "textColor_id"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -2587,6 +2944,7 @@ extension ZPTextStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
       case 2: try { try decoder.decodeSingularBoolField(value: &self.isEditable) }()
       case 3: try { try decoder.decodeSingularInt32Field(value: &self.maxLines) }()
       case 4: try { try decoder.decodeSingularEnumField(value: &self.alignment) }()
+      case 5: try { try decoder.decodeSingularStringField(value: &self.textColorID) }()
       default: break
       }
     }
@@ -2605,6 +2963,9 @@ extension ZPTextStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     if self.alignment != .left {
       try visitor.visitSingularEnumField(value: self.alignment, fieldNumber: 4)
     }
+    if !self.textColorID.isEmpty {
+      try visitor.visitSingularStringField(value: self.textColorID, fieldNumber: 5)
+    }
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2613,6 +2974,7 @@ extension ZPTextStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     if lhs.isEditable != rhs.isEditable {return false}
     if lhs.maxLines != rhs.maxLines {return false}
     if lhs.alignment != rhs.alignment {return false}
+    if lhs.textColorID != rhs.textColorID {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
@@ -2628,6 +2990,44 @@ extension ZPTextStyle.ZPTextAlignment: SwiftProtobuf._ProtoNameProviding {
     5: .same(proto: "justified"),
     6: .same(proto: "natural"),
   ]
+}
+
+extension ZPListSectionStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = "ZPListSectionStyle"
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "listPatternId"),
+    2: .same(proto: "numberOfItems"),
+  ]
+
+  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      // The use of inline closures is to circumvent an issue where the compiler
+      // allocates stack space for every case branch when no optimizations are
+      // enabled. https://github.com/apple/swift-protobuf/issues/1034
+      switch fieldNumber {
+      case 1: try { try decoder.decodeSingularStringField(value: &self.listPatternID) }()
+      case 2: try { try decoder.decodeSingularInt32Field(value: &self.numberOfItems) }()
+      default: break
+      }
+    }
+  }
+
+  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if !self.listPatternID.isEmpty {
+      try visitor.visitSingularStringField(value: self.listPatternID, fieldNumber: 1)
+    }
+    if self.numberOfItems != 0 {
+      try visitor.visitSingularInt32Field(value: self.numberOfItems, fieldNumber: 2)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  static func ==(lhs: ZPListSectionStyle, rhs: ZPListSectionStyle) -> Bool {
+    if lhs.listPatternID != rhs.listPatternID {return false}
+    if lhs.numberOfItems != rhs.numberOfItems {return false}
+    if lhs.unknownFields != rhs.unknownFields {return false}
+    return true
+  }
 }
 
 extension ZPSizeAttribute: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
@@ -2917,7 +3317,8 @@ extension ZPAction: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationB
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "actionKey"),
     2: .same(proto: "uiActionType"),
-    3: .same(proto: "navigations"),
+    3: .same(proto: "devicePermissions"),
+    4: .same(proto: "navigations"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -2928,7 +3329,8 @@ extension ZPAction: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationB
       switch fieldNumber {
       case 1: try { try decoder.decodeSingularStringField(value: &self.actionKey) }()
       case 2: try { try decoder.decodeSingularEnumField(value: &self.uiActionType) }()
-      case 3: try { try decoder.decodeRepeatedMessageField(value: &self.navigations) }()
+      case 3: try { try decoder.decodeRepeatedEnumField(value: &self.devicePermissions) }()
+      case 4: try { try decoder.decodeRepeatedMessageField(value: &self.navigations) }()
       default: break
       }
     }
@@ -2941,8 +3343,11 @@ extension ZPAction: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationB
     if self.uiActionType != .none {
       try visitor.visitSingularEnumField(value: self.uiActionType, fieldNumber: 2)
     }
+    if !self.devicePermissions.isEmpty {
+      try visitor.visitPackedEnumField(value: self.devicePermissions, fieldNumber: 3)
+    }
     if !self.navigations.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.navigations, fieldNumber: 3)
+      try visitor.visitRepeatedMessageField(value: self.navigations, fieldNumber: 4)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -2950,6 +3355,7 @@ extension ZPAction: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationB
   static func ==(lhs: ZPAction, rhs: ZPAction) -> Bool {
     if lhs.actionKey != rhs.actionKey {return false}
     if lhs.uiActionType != rhs.uiActionType {return false}
+    if lhs.devicePermissions != rhs.devicePermissions {return false}
     if lhs.navigations != rhs.navigations {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -3014,14 +3420,6 @@ extension ZPNavigation.ZPTransitionType: SwiftProtobuf._ProtoNameProviding {
     3: .same(proto: "root"),
     4: .same(proto: "search"),
     5: .same(proto: "actionSheet"),
-    6: .same(proto: "imagePicker"),
-    7: .same(proto: "documentPicker"),
-    8: .same(proto: "liveCameraPicker"),
-    9: .same(proto: "liveVideoPicker"),
-    10: .same(proto: "audioPreview"),
-    11: .same(proto: "videoPreview"),
-    12: .same(proto: "imagePreview"),
-    13: .same(proto: "documentPreview"),
   ]
 }
 
@@ -3272,7 +3670,6 @@ extension ZPFontStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     2: .standard(proto: "font_name"),
     3: .standard(proto: "font_size"),
     4: .standard(proto: "font_weight"),
-    5: .standard(proto: "textColor_id"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -3285,7 +3682,6 @@ extension ZPFontStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
       case 2: try { try decoder.decodeSingularStringField(value: &self.fontName) }()
       case 3: try { try decoder.decodeSingularInt32Field(value: &self.fontSize) }()
       case 4: try { try decoder.decodeSingularEnumField(value: &self.fontWeight) }()
-      case 5: try { try decoder.decodeSingularStringField(value: &self.textColorID) }()
       default: break
       }
     }
@@ -3304,9 +3700,6 @@ extension ZPFontStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     if self.fontWeight != .ultraLight {
       try visitor.visitSingularEnumField(value: self.fontWeight, fieldNumber: 4)
     }
-    if !self.textColorID.isEmpty {
-      try visitor.visitSingularStringField(value: self.textColorID, fieldNumber: 5)
-    }
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -3315,7 +3708,6 @@ extension ZPFontStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     if lhs.fontName != rhs.fontName {return false}
     if lhs.fontSize != rhs.fontSize {return false}
     if lhs.fontWeight != rhs.fontWeight {return false}
-    if lhs.textColorID != rhs.textColorID {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
