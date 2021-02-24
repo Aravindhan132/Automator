@@ -58,7 +58,7 @@ extension ZPScreen {
             
             if isNative {
                 model.originalitems.append(item.key)
-                model.items.append("\(self.module)_TopNavigation_\(item.key)")
+                model.items.append("\(item.key)")
             }
             
             item.items.forEach { (eachitem) in
@@ -66,7 +66,7 @@ extension ZPScreen {
                     prepareDynamicItems(item: eachitem , model: &model , isNative: isNative)
                 } else {
                     model.originalitems.append(eachitem.key)
-                    model.items.append("\(self.module)_TopNavigation_\(eachitem.key)")
+                    model.items.append("\(eachitem.key)")
                 }
             }
         }
@@ -92,7 +92,7 @@ extension ZPScreen {
                     prepareDynamicItems(item: eachitem , model: &model , isNative: isNative)
                 } else {
                     model.originalitems.append(eachitem.key)
-                    model.items.append("\(self.module)_BottomNavigation_\(eachitem.key)")
+                    model.items.append("\(eachitem.key)")
                 }
             }
         }
@@ -118,7 +118,7 @@ extension ZPScreen {
                     prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
                 } else {
                     model.originalitems.append(eachitem.key)
-                    model.items.append("\(self.module)_\(patternName)_\(eachitem.key)")
+                    model.items.append("\(eachitem.key)")
                 }
             }
         }
@@ -146,15 +146,13 @@ extension ZPScreen {
                     prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
                 } else {
                     model.originalitems.append(eachitem.key)
-                    model.items.append("\(self.module)_\(patternName)_\(eachitem.key)")
+                    model.items.append("\(eachitem.key)")
                 }
             }
         }
         
-        print(listitems?.patterns.count)
         listitems?.patterns.forEach({ (eachPattern) in
             if totalpatterns.filter({$0.patternKey == eachPattern.key}).count > 0 {return}
-            print(eachPattern.key , self.module , totalpatterns.filter({$0.patternKey == eachPattern.key}).count )
             var patternmodel = PattenModel()
             patternmodel.patternKey = "\(self.module)_SectionHeader_\(eachPattern.key)_DataProvider"
             prepareDynamicItems(item: eachPattern, model: &patternmodel, patternName: eachPattern.key)
@@ -176,7 +174,7 @@ extension ZPScreen {
                     prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
                 } else {
                     model.originalitems.append(eachitem.key)
-                    model.items.append("\(self.module)_\(patternName)_\(eachitem.key)")
+                    model.items.append("\(eachitem.key)")
                 }
             }
         }

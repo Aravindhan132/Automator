@@ -16,14 +16,45 @@ public struct CLI {
         switch arguments[1] {
         case "new":
             try createNewPlatformProject()
-
+            
         case "update":
             try createNewPlatformProject()
+            
+        case "install":
+            try platformInstall()
 
+        case ".dev":
+            print("Development Mode")
+            let projectPath = arguments[2]
+            if let directoryPath = try? shellOut(to: "find . -type d -name" , arguments: ["CodeGeneration"]) {
+                print(directoryPath)
+               if let created = try? createNewPlatformProject2(directoryPath) {
+                           if let comments2 = try? shellOut(to:  "cd \(projectPath) && pod install", arguments: [""]) {
+                                    print(comments2)
+                           }
+               }
+            }
+                 
+            
         default:
             outputHelpText()
         }
     }
+    
+    private func platformInstall() throws {
+        
+        if let comments = try? shellOut(to: "pod", arguments: ["install"]) {
+            
+            if comments.contains("Pod installation complete") {
+                print("*****Finished*****")
+            }
+            
+            print(comments)
+        }
+        
+    }
+    
+    
     
     private func replaceFile(at path: String, with contents: String) throws {
         try shellOut(to: .removeFile(from: path))
@@ -32,56 +63,107 @@ public struct CLI {
     }
     
     private func createNewPlatformProject() throws {
+        
+        // if let podInstall = try? shellOut(to: .installCocoaPods())  {
+        //     print("pod installed" , podInstall)
 
-        if let removed = try?  shellOut(to: "rm -r", arguments: ["Automator"]) {
-            print("New Files Updating ⏰ ⏰ ⏰")
-        }
-
-        guard let sleeping = try? shellOut(to: "sleep", arguments: ["5"]) else {return}
-
-        if let removed = try? shellOut(to: "mkdir", arguments: ["Automator"]) {
             
-        }
-        
-        print("🚂 🚂 🚂 New Files Updated")
-
-        let currentDirectory = try getCurrentDirectory()
-        
-        
-        
-        // Create DataItemModel Classes
-        try replaceFile(
+            
+            if let removed = try?  shellOut(to: "rm -r", arguments: ["Automator"]) {
+                print("New Files Updating ⏰ ⏰ ⏰")
+            }
+            
+            guard let sleeping = try? shellOut(to: "sleep", arguments: ["5"]) else {return}
+            
+            if let removed = try? shellOut(to: "mkdir", arguments: ["Automator"]) {
+                
+            }
+            
+            print("🚂 🚂 🚂 New Files Updated")
+            
+            // let currentDirectory = try getCurrentDirectory()
+            
+            
+            
+            // Create DataItemModel Classes
+            try replaceFile(
                 at: "Automator/ZPDataItemModel.swift",
                 with: DataItemsGenerator.dataitemModelContents()
-        )
-
+            )
+            
             FileTemplate.prepareFileGenerationModels {
                 screens_datasource.forEach({ (eachscreen) in
-                            let path = "Automator/\(eachscreen.screenKey)_DataProvider.swift"
-                            let url = URL(fileURLWithPath: path)
-                            guard let result4 = try? shellOut(to: .removeFile(from: path)) ,
-                            let content4 = try? FileTemplate.prepareScreeenContent(screen: eachscreen).write(to: url, atomically: true, encoding: .utf8)
-                            else { print("Retured --->"); return}
-
+                    let path = "Automator/\(eachscreen.screenKey)_DataProvider.swift"
+                    let url = URL(fileURLWithPath: path)
+                    guard let result4 = try? shellOut(to: .removeFile(from: path)) ,
+                          let content4 = try? FileTemplate.prepareScreeenContent(screen: eachscreen).write(to: url, atomically: true, encoding: .utf8)
+                    else { print("Retured --->"); return}
+                    
                 })
-
+                
                 let path = "Automator/FetchDataComponent.swift"
                 let url = URL(fileURLWithPath: path)
                 guard let result4 = try? shellOut(to: .removeFile(from: path)) ,
                       let content4 = try? FileTemplate.prepareFetchDataContent().write(to: url, atomically: true, encoding: .utf8)
-                        else { print("Retured --->"); return}
-
+                else { print("Retured --->"); return}
+                
             }
+            
+            
+            
+            
+            print("🚀 Here You Go!!! , Thanks for Using Platform Automator.")
+            
+        // } else {
+        //     print("Error")
+        // }
         
         
-       
-        
-        print("🚀 Here You Go!!! , Thanks for Using Platform Automator.")
     }
 
-
-   
-     
+    private func createNewPlatformProject2(_ path: String) throws {
+        
+            
+            print("🚂 🚂 🚂 New Files Updated")
+           
+           
+           
+            // Create DataItemModel Classes
+            try replaceFile(
+                at: "\(path)/ZPDataItemModel.swift",
+                with: DataItemsGenerator.dataitemModelContents()
+            )
+            
+            FileTemplate.prepareFileGenerationModels {
+                screens_datasource.forEach({ (eachscreen) in
+                    let path = "\(path)/\(eachscreen.screenKey)_DataProvider.swift"
+                    let url = URL(fileURLWithPath: path)
+                    guard let result4 = try? shellOut(to: .removeFile(from: path)) ,
+                          let content4 = try? FileTemplate.prepareScreeenContent(screen: eachscreen).write(to: url, atomically: true, encoding: .utf8)
+                    else { print("Retured --->"); return}
+                    
+                })
+                
+                let path = "\(path)/FetchDataComponent.swift"
+                let url = URL(fileURLWithPath: path)
+                guard let result4 = try? shellOut(to: .removeFile(from: path)) ,
+                      let content4 = try? FileTemplate.prepareFetchDataContent().write(to: url, atomically: true, encoding: .utf8)
+                else { print("Retured --->"); return}
+                
+            }
+            
+            
+            
+            
+            print("🚀 Here You Go!!! , Thanks for Using Platform Automator.")
+    
+        
+        
+    }
+    
+    
+    
+    
     private func getCurrentDirectory() throws -> (fullPath: String, currentPath: String) {
         let fullPath = try shellOut(to: "pwd")
         guard let currentPath = fullPath.components(separatedBy: "/").last else {
@@ -89,8 +171,8 @@ public struct CLI {
         }
         return (fullPath, currentPath)
     }
-  
- 
+    
+    
 }
 
 private extension CLI {
@@ -126,7 +208,7 @@ extension String {
     func capitalizingFirstLetter() -> String {
         return prefix(1).capitalized + dropFirst()
     }
-
+    
     mutating func capitalizeFirstLetter() {
         self = self.capitalizingFirstLetter()
     }

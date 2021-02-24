@@ -5,83 +5,91 @@ class DataItemsGenerator {
     static func dataitemModelContents() -> String {
          return """
         
-            import Foundation
-            import UIKit
+        import Foundation
+        import UIKit
 
-            public enum Values {
-                case text(_ text: String)
+        public enum Values {
+                case plain(_ text: String)
+                case progress(_ value: CGFloat)
+                case placeHolderString(_ text: String)
                 case attributed(_ attributed: NSAttributedString)
-                case html(_ test: String)
+                case attributedPlaceHolder(_ text: NSAttributedString)
+                case url(_ text: String)
                 case image(UIImage)
-            }
-            
-            public enum Colors {
-                case bgColor(_ colorValue: UIColor)
-                case textColor(_ color: UIColor)
-                case forgroundColor(_ color: UIColor)
-                case borderColor(_ color: UIColor)
-                case borderWidth(CGFloat)
-            }
-            
-             
-            public typealias TextValues = (text: String? , attributed: NSAttributedString? , webContent: String?)
-            
-            public typealias ImageValues = (image: UIImage? , icon: UIFont?)
+                case icon(_ text: NSAttributedString)
+                case checked(_ enabled: Bool)
+                case list(_ value: ZBListProtocol)
+        }
 
-            //public protocol Base_DataProvider { }
+        public typealias TextValues = (plainString: String?, placeHolderString: String?, attributedString: NSAttributedString?, attributedPlaceHolderString: NSAttributedString?, urlString: String? , progressValue: CGFloat? , checked: Bool?)
 
-            public class DataItem: NSObject  {
+        public typealias ImageValues = (image: UIImage?, icon: NSAttributedString?, placeHolderImage: UIImage?, placeHolderIcon: NSAttributedString?, placeHolderText: String?)
+
+        public protocol ZBDataProvider { }
+            
+        public typealias DataValues = (textData: TextValues? , imageData: ImageValues?)
+            
+        public class DataItem: NSObject  {
                 
-                public var styles: [Colors] = [];
+                public var isHide: Bool = false
+
+                public var styleInput: Any? = nil;
+
                 public var update: (() -> ())? = nil;
-                public var imageData: ImageValues = ImageValues(nil , nil);
-                public var textData: TextValues = TextValues(nil , nil , nil);
+
+                public var dataValue: (DataValues) = DataValues(TextValues(nil , nil, nil , nil, nil , nil , nil) ,
+                                                    ImageValues(nil , nil, nil , nil, nil))
+
+                public var listDataSource: ZBListProtocol? = nil
+
                 public static var shared: DataItem {
-                        let datamodel = DataItem.init()
-                        datamodel.styles.removeAll()
-                        return datamodel
-                    }
+                    let datamodel = DataItem.init()
+                    return datamodel
+                }
                 
                 public override init() {
         
                 }
+                
+                
+        }
+
+        extension DataItem {
 
                 @discardableResult public func setData(_ property: Values) -> DataItem {
                     switch property {
-                    case let .text(textvalue):
-                        self.textData.text = textvalue
-                    case let .attributed(attributedvalue):
-                        self.textData.attributed = attributedvalue
-                    case let .html(htmlvalue):
-                        self.textData.webContent = htmlvalue
-                    case let .image(imagevalue):
-                        self.imageData.image = imagevalue
-                    }
-                    return self
-                }
-
-                @discardableResult public func setStyle(property: Colors) -> DataItem {
-                    self.styles.append(property)
+                        case let .plain(textvalue):
+                            self.dataValue.textData?.plainString = textvalue
+                        case let .placeHolderString(placeholder):
+                            self.dataValue.textData?.placeHolderString = placeholder
+                        case let .attributed(attributedvalue):
+                            self.dataValue.textData?.attributedString = attributedvalue
+                        case let .attributedPlaceHolder(attributedPlaceHolder):
+                            self.dataValue.textData?.attributedPlaceHolderString = attributedPlaceHolder
+                        case let .url(urlvalue):
+                            self.dataValue.textData?.urlString = urlvalue
+                        case let .image(imagevalue):
+                            self.dataValue.imageData?.image = imagevalue
+                        case let .icon(iconvalue):
+                            self.dataValue.imageData?.icon = iconvalue
+                        case let .progress(progressvalue):
+                            self.dataValue.textData?.progressValue = progressvalue
+                        case let .checked(enabledvalue):
+                            self.dataValue.textData?.checked = enabledvalue
+                        case let .list(listdatasource):
+                            self.listDataSource = listdatasource
+                        }
                     return self
                 }
                 
-            }
-
-            
-
-            public protocol ListProtocol {
-                 func initializedData(isCompleted: ((Bool) -> ())?)
-                 func prepareNumberOfSections() -> Int
-                 func prepareNumberofRows(in section: Int) -> Int
-                 func prepareDataForCell(in indexpath: IndexPath) -> Base_DataProvider
-            }
-
-
-            public protocol DetailProtocol {
-                
-            }
-
+        }
            
+
+        public class ZDCollapsingScrollContext: NSObject {
+                public var maxOffsetY: CGFloat = 0
+                public var outerOffset: CGPoint = CGPoint.zero
+                public var innerOffset: CGPoint = CGPoint.zero
+        }         
 
         """
     }
