@@ -2,7 +2,7 @@ extension FileTemplate {
 
 static func prepareFetchDataContent() -> String {
         var begin_content = ""
-        var starting_template = "extension ZBDataProvider { \n public func getDataItem(key: String , screenID: String) -> DataItem? {  \n"
+        var starting_template = "extension ZPDataProvider { \n public func getDataItem(key: String , screenID: String) -> ZPDataItem? {  \n"
         var ending_template = "\n } \n"
 
         var content = ""

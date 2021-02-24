@@ -25,11 +25,11 @@ class DataItemsGenerator {
 
         public typealias ImageValues = (image: UIImage?, icon: NSAttributedString?, placeHolderImage: UIImage?, placeHolderIcon: NSAttributedString?, placeHolderText: String?)
 
-        public protocol ZBDataProvider { }
+        public protocol ZPDataProvider { }
             
         public typealias DataValues = (textData: TextValues? , imageData: ImageValues?)
             
-        public class DataItem: NSObject  {
+        public class ZPDataItem: NSObject  {
                 
                 public var isHide: Bool = false
 
@@ -42,8 +42,8 @@ class DataItemsGenerator {
 
                 public var listDataSource: ZBListProtocol? = nil
 
-                public static var shared: DataItem {
-                    let datamodel = DataItem.init()
+                public static var shared: ZPDataItem {
+                    let datamodel = ZPDataItem.init()
                     return datamodel
                 }
                 
@@ -54,9 +54,9 @@ class DataItemsGenerator {
                 
         }
 
-        extension DataItem {
+        extension ZPDataItem {
 
-                @discardableResult public func setData(_ property: Values) -> DataItem {
+                @discardableResult public func setData(_ property: Values) -> ZPDataItem {
                     switch property {
                         case let .plain(textvalue):
                             self.dataValue.textData?.plainString = textvalue

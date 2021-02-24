@@ -1,0 +1,57 @@
+{
+  "": {
+    "dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ZPAutomator.d",
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ZPAutomator.o",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/master.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/APIRequester.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/APIRequester.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/APIRequester~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/APIRequester.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/CLI.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/CLI.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/CLI~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/CLI.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/DataItems.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/DataItems.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/DataItems~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/DataItems.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/FetchCaseTemplate.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/FetchCaseTemplate.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/FetchCaseTemplate~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/FetchCaseTemplate.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/FileTemplate.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/FileTemplate.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/FileTemplate~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/FileTemplate.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/ItemsProtocols.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ItemsProtocols.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ItemsProtocols~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ItemsProtocols.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/ScreenModel.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ScreenModel.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ScreenModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ScreenModel.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/ZPAppExtensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ZPAppExtensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ZPAppExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/ZPAppExtensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/builder.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/builder.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/builder.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/builder.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/main.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/main.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ZPAutomator.build/main.swiftdeps"
+  }
+}

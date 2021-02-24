@@ -1,0 +1,4 @@
+module SwiftProtobuf {
+    header "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/SwiftProtobuf-Swift.h"
+    requires objc
+}

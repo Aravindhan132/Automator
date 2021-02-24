@@ -1,0 +1,4 @@
+module SwiftProtobufPluginLibrary {
+    header "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobufPluginLibrary.build/SwiftProtobufPluginLibrary-Swift.h"
+    requires objc
+}

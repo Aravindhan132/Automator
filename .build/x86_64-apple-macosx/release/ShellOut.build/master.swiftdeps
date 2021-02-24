@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "ed16235bdaf762970193ffe992739d0e"
+build_time: [1614161090, 415747000]
+inputs:
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/shellout/Sources/ShellOut.swift": [9223372036, 854775807]

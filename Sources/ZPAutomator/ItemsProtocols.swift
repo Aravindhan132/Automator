@@ -6,10 +6,10 @@ extension FileTemplate {
 
 // PREPARE LIST ITEM CONTENT
         screen.listPatterns.forEach({ (eachPattern) in
-            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZBDataProvider { \n"
+            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZPDataProvider { \n"
 
             eachPattern.items.forEach({ (eachitem) in
-                initial_protocol_template += "\t var \(eachitem): (DataItem) {get}; \n"
+                initial_protocol_template += "\t var \(eachitem): (ZPDataItem) {get}; \n"
             })
 
             var end_protocol_template = "} \n"
@@ -20,10 +20,10 @@ extension FileTemplate {
 
 // PREPARE TOP NAVIGATION CONTENT
         screen.topNavigationPatterns.forEach({ (eachPattern) in
-            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZBDataProvider { \n"
+            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZPDataProvider { \n"
 
             eachPattern.items.forEach({ (eachitem) in
-                initial_protocol_template += "\t var \(eachitem): (DataItem) {get}; \n"
+                initial_protocol_template += "\t var \(eachitem): (ZPDataItem) {get}; \n"
             })
 
             var end_protocol_template = "  } \n"
@@ -34,10 +34,10 @@ extension FileTemplate {
 
 // PREPARE Bottom NAVIGATION CONTENT
         screen.bottomNavigationPatterns.forEach({ (eachPattern) in
-            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZBDataProvider { \n"
+            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZPDataProvider { \n"
 
             eachPattern.items.forEach({ (eachitem) in
-                initial_protocol_template += "\t var \(eachitem): (DataItem) {get}; \n"
+                initial_protocol_template += "\t var \(eachitem): (ZPDataItem) {get}; \n"
             })
 
             var end_protocol_template = "  } \n"
@@ -48,10 +48,10 @@ extension FileTemplate {
 
 // PREPARE SEECTION HEADER CONTENT
         screen.sectionHeaders.forEach({ (eachPattern) in
-            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZBDataProvider { \n"
+            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZPDataProvider { \n"
 
             eachPattern.items.forEach({ (eachitem) in
-                initial_protocol_template += "\t var \(eachitem): (DataItem) {get}; \n"
+                initial_protocol_template += "\t var \(eachitem): (ZPDataItem) {get}; \n"
             })
 
             var end_protocol_template = "  } \n"
@@ -62,10 +62,10 @@ extension FileTemplate {
 
 // PREPARE CONTAINER CONTENT
         screen.containerPatterns.forEach({ (eachPattern) in
-            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZBDataProvider { \n"
+            var initial_protocol_template = "public protocol \(eachPattern.patternKey): ZPDataProvider { \n"
 
             eachPattern.items.forEach({ (eachitem) in
-                initial_protocol_template += "\t var \(eachitem): (DataItem) {get}; \n"
+                initial_protocol_template += "\t var \(eachitem): (ZPDataItem) {get}; \n"
             })
 
             var end_protocol_template = "  } \n"

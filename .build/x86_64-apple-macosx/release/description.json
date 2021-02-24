@@ -1,0 +1,23 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "\/Users\/aravind-zt336\/Downloads\/AUTOMATOR_GIT\/.build\/x86_64-apple-macosx\/release\/platformPackageTests.xctest\/Contents\/MacOS\/platformPackageTests",
+      "packageName" : "platform",
+      "productName" : "platformPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftTargetMap" : {
+    "C.protoc-gen-swift-release.module" : "protoc-gen-swift",
+    "C.ShellOut-release.module" : "ShellOut",
+    "C.SwiftProtobuf-release.module" : "SwiftProtobuf",
+    "C.SwiftProtobufPluginLibrary-release.module" : "SwiftProtobufPluginLibrary",
+    "C.ZPAutomator-release.module" : "ZPAutomator",
+    "C.ZPAutomatorTests-release.module" : "ZPAutomatorTests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

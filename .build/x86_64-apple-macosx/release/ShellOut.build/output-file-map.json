@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ShellOut.build/ShellOut.d",
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ShellOut.build/ShellOut.o",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ShellOut.build/master.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/shellout/Sources/ShellOut.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ShellOut.build/ShellOut.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ShellOut.build/ShellOut~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/ShellOut.build/ShellOut.swiftdeps"
+  }
+}

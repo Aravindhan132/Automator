@@ -1,0 +1,422 @@
+{
+  "": {
+    "dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/SwiftProtobuf.d",
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/SwiftProtobuf.o",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/master.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/AnyMessageStorage.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/AnyMessageStorage.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/AnyMessageStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/AnyMessageStorage.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/AnyUnpackError.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/AnyUnpackError.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/AnyUnpackError~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/AnyUnpackError.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/BinaryDecoder.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDecoder.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDecoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDecoder.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/BinaryDecodingError.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDecodingError.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDecodingError~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDecodingError.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/BinaryDecodingOptions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDecodingOptions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDecodingOptions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDecodingOptions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/BinaryDelimited.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDelimited.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDelimited~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryDelimited.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/BinaryEncoder.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncoder.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncoder.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/BinaryEncodingError.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncodingError.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncodingError~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncodingError.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/BinaryEncodingSizeVisitor.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncodingSizeVisitor.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncodingSizeVisitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncodingSizeVisitor.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/BinaryEncodingVisitor.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncodingVisitor.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncodingVisitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/BinaryEncodingVisitor.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/CustomJSONCodable.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/CustomJSONCodable.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/CustomJSONCodable~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/CustomJSONCodable.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Data+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Data+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Data+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Data+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Decoder.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Decoder.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Decoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Decoder.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/DoubleParser.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/DoubleParser.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/DoubleParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/DoubleParser.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Enum.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Enum.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Enum~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Enum.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/ExtensibleMessage.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensibleMessage.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensibleMessage~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensibleMessage.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/ExtensionFieldValueSet.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensionFieldValueSet.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensionFieldValueSet~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensionFieldValueSet.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/ExtensionFields.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensionFields.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensionFields~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensionFields.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/ExtensionMap.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensionMap.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensionMap~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ExtensionMap.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/FieldTag.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/FieldTag.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/FieldTag~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/FieldTag.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/FieldTypes.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/FieldTypes.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/FieldTypes~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/FieldTypes.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_Any+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Any+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Any+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Any+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_Any+Registry.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Any+Registry.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Any+Registry~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Any+Registry.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_Duration+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Duration+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Duration+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Duration+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_FieldMask+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_FieldMask+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_FieldMask+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_FieldMask+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_ListValue+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_ListValue+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_ListValue+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_ListValue+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_NullValue+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_NullValue+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_NullValue+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_NullValue+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_Struct+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Struct+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Struct+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Struct+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_Timestamp+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Timestamp+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Timestamp+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Timestamp+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_Value+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Value+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Value+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Value+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Google_Protobuf_Wrappers+Extensions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Wrappers+Extensions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Wrappers+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Google_Protobuf_Wrappers+Extensions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/HashVisitor.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/HashVisitor.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/HashVisitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/HashVisitor.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Internal.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Internal.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Internal~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Internal.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/JSONDecoder.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONDecoder.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONDecoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONDecoder.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/JSONDecodingError.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONDecodingError.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONDecodingError~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONDecodingError.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/JSONDecodingOptions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONDecodingOptions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONDecodingOptions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONDecodingOptions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/JSONEncoder.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncoder.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncoder.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/JSONEncodingError.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncodingError.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncodingError~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncodingError.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/JSONEncodingOptions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncodingOptions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncodingOptions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncodingOptions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/JSONEncodingVisitor.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncodingVisitor.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncodingVisitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONEncodingVisitor.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/JSONMapEncodingVisitor.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONMapEncodingVisitor.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONMapEncodingVisitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONMapEncodingVisitor.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/JSONScanner.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONScanner.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONScanner~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/JSONScanner.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/MathUtils.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/MathUtils.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/MathUtils~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/MathUtils.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Message+AnyAdditions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+AnyAdditions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+AnyAdditions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+AnyAdditions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Message+BinaryAdditions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+BinaryAdditions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+BinaryAdditions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+BinaryAdditions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Message+JSONAdditions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+JSONAdditions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+JSONAdditions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+JSONAdditions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Message+JSONArrayAdditions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+JSONArrayAdditions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+JSONArrayAdditions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+JSONArrayAdditions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Message+TextFormatAdditions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+TextFormatAdditions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+TextFormatAdditions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message+TextFormatAdditions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Message.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Message.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/MessageExtension.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/MessageExtension.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/MessageExtension~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/MessageExtension.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/NameMap.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/NameMap.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/NameMap~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/NameMap.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/ProtoNameProviding.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ProtoNameProviding.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ProtoNameProviding~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ProtoNameProviding.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/ProtobufAPIVersionCheck.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ProtobufAPIVersionCheck.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ProtobufAPIVersionCheck~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ProtobufAPIVersionCheck.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/ProtobufMap.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ProtobufMap.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ProtobufMap~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ProtobufMap.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/SelectiveVisitor.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/SelectiveVisitor.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/SelectiveVisitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/SelectiveVisitor.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/SimpleExtensionMap.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/SimpleExtensionMap.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/SimpleExtensionMap~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/SimpleExtensionMap.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/StringUtils.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/StringUtils.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/StringUtils~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/StringUtils.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/TextFormatDecoder.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatDecoder.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatDecoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatDecoder.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/TextFormatDecodingError.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatDecodingError.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatDecodingError~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatDecodingError.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/TextFormatEncoder.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatEncoder.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatEncoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatEncoder.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/TextFormatEncodingOptions.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatEncodingOptions.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatEncodingOptions~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatEncodingOptions.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/TextFormatEncodingVisitor.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatEncodingVisitor.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatEncodingVisitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatEncodingVisitor.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/TextFormatScanner.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatScanner.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatScanner~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TextFormatScanner.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/TimeUtils.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TimeUtils.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TimeUtils~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/TimeUtils.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/UnknownStorage.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/UnknownStorage.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/UnknownStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/UnknownStorage.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/UnsafeBufferPointer+Shims.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/UnsafeBufferPointer+Shims.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/UnsafeBufferPointer+Shims~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/UnsafeBufferPointer+Shims.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/UnsafeRawPointer+Shims.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/UnsafeRawPointer+Shims.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/UnsafeRawPointer+Shims~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/UnsafeRawPointer+Shims.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Varint.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Varint.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Varint~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Varint.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Version.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Version.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Version~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Version.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/Visitor.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Visitor.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Visitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/Visitor.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/WireFormat.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/WireFormat.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/WireFormat~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/WireFormat.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/ZigZag.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ZigZag.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ZigZag~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/ZigZag.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/any.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/any.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/any.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/any.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/api.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/api.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/api.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/api.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/descriptor.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/descriptor.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/descriptor.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/descriptor.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/duration.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/duration.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/duration.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/duration.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/empty.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/empty.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/empty.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/empty.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/field_mask.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/field_mask.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/field_mask.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/field_mask.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/source_context.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/source_context.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/source_context.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/source_context.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/struct.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/struct.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/struct.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/struct.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/timestamp.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/timestamp.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/timestamp.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/timestamp.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/type.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/type.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/type.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/type.pb.swiftdeps"
+  },
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/swift-protobuf/Sources/SwiftProtobuf/wrappers.pb.swift": {
+    "object": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/wrappers.pb.swift.o",
+    "swiftmodule": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/wrappers.pb~partial.swiftmodule",
+    "swift-dependencies": "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/x86_64-apple-macosx/release/SwiftProtobuf.build/wrappers.pb.swiftdeps"
+  }
+}
