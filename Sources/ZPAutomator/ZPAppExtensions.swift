@@ -31,7 +31,7 @@ extension ZPItemType {
     public var isHolderView: Bool {
         
         switch self {
-        case .hStack , .vStack , .zStack , .scrollView:
+        case .hStack , .vStack , .zStack :
             return true
         default:
             return false
@@ -41,7 +41,7 @@ extension ZPItemType {
     public var isCustomHolderView: Bool {
            
            switch self {
-           case .tabLayoutViewPager, .tabView, .tabViewIndicator, .pagingView:
+           case .tabLayoutViewPager, .tabView, .tabViewIndicator, .pagingView , .scrollView:
                return true
            default:
                return false
@@ -144,7 +144,14 @@ extension ZPScreen {
             item.items.forEach { (eachitem) in
                 if eachitem.itemType.isHolderView {
                     prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
-                } else {
+                } 
+                 else if eachitem.itemType.isCustomHolderView {
+                    print(eachitem.key , eachitem.itemType)
+                    model.originalitems.append(eachitem.key)
+                    model.items.append("\(eachitem.key)")
+                    prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
+                }
+                else {
                     model.originalitems.append(eachitem.key)
                     model.items.append("\(eachitem.key)")
                 }
@@ -172,7 +179,14 @@ extension ZPScreen {
             item.items.forEach { (eachitem) in
                 if eachitem.itemType.isHolderView {
                     prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
-                } else {
+                } 
+                else if eachitem.itemType.isCustomHolderView {
+                    print(eachitem.key , eachitem.itemType)
+                    model.originalitems.append(eachitem.key)
+                    model.items.append("\(eachitem.key)")
+                    prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
+                }
+                else {
                     model.originalitems.append(eachitem.key)
                     model.items.append("\(eachitem.key)")
                 }

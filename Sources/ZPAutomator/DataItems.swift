@@ -81,6 +81,11 @@ class DataItemsGenerator {
                         }
                     return self
                 }
+
+                @discardableResult public func setListDatasouce(_ listdatasource: ZBListProtocol) -> ZPDataItem {
+                    self.listDataSource = listdatasource
+                    return self
+                }
                 
         }
            

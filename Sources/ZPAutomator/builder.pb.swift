@@ -880,14 +880,18 @@ struct ZPItemStyle {
   /// Clears the value of `sectionStyle`. Subsequent reads from it will return its default value.
   mutating func clearSectionStyle() {_uniqueStorage()._sectionStyle = nil}
 
+  var tabViewStyle: ZPTabViewStyle {
+    get {return _storage._tabViewStyle ?? ZPTabViewStyle()}
+    set {_uniqueStorage()._tabViewStyle = newValue}
+  }
+  /// Returns true if `tabViewStyle` has been explicitly set.
+  var hasTabViewStyle: Bool {return _storage._tabViewStyle != nil}
+  /// Clears the value of `tabViewStyle`. Subsequent reads from it will return its default value.
+  mutating func clearTabViewStyle() {_uniqueStorage()._tabViewStyle = nil}
+
   var separatorType: ZPItemStyle.ZPSeparatorType {
     get {return _storage._separatorType}
     set {_uniqueStorage()._separatorType = newValue}
-  }
-
-  var tabViewType: ZPItemStyle.ZPTabViewType {
-    get {return _storage._tabViewType}
-    set {_uniqueStorage()._tabViewType = newValue}
   }
 
   ///Need to fix
@@ -930,34 +934,6 @@ struct ZPItemStyle {
       case .dot: return 1
       case .space: return 2
       case .dashed: return 3
-      case .UNRECOGNIZED(let i): return i
-      }
-    }
-
-  }
-
-  enum ZPTabViewType: SwiftProtobuf.Enum {
-    typealias RawValue = Int
-    case segment // = 0
-    case tab // = 1
-    case UNRECOGNIZED(Int)
-
-    init() {
-      self = .segment
-    }
-
-    init?(rawValue: Int) {
-      switch rawValue {
-      case 0: self = .segment
-      case 1: self = .tab
-      default: self = .UNRECOGNIZED(rawValue)
-      }
-    }
-
-    var rawValue: Int {
-      switch self {
-      case .segment: return 0
-      case .tab: return 1
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -1039,14 +1015,6 @@ extension ZPItemStyle.ZPSeparatorType: CaseIterable {
     .dot,
     .space,
     .dashed,
-  ]
-}
-
-extension ZPItemStyle.ZPTabViewType: CaseIterable {
-  // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static var allCases: [ZPItemStyle.ZPTabViewType] = [
-    .segment,
-    .tab,
   ]
 }
 
@@ -1362,6 +1330,60 @@ struct ZPListSectionStyle {
 
   init() {}
 }
+
+struct ZPTabViewStyle {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  var segmentToSelect: Int32 = 0
+
+  var tabViewType: ZPTabViewStyle.ZPTabViewType = .segment
+
+  var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  enum ZPTabViewType: SwiftProtobuf.Enum {
+    typealias RawValue = Int
+    case segment // = 0
+    case tab // = 1
+    case UNRECOGNIZED(Int)
+
+    init() {
+      self = .segment
+    }
+
+    init?(rawValue: Int) {
+      switch rawValue {
+      case 0: self = .segment
+      case 1: self = .tab
+      default: self = .UNRECOGNIZED(rawValue)
+      }
+    }
+
+    var rawValue: Int {
+      switch self {
+      case .segment: return 0
+      case .tab: return 1
+      case .UNRECOGNIZED(let i): return i
+      }
+    }
+
+  }
+
+  init() {}
+}
+
+#if swift(>=4.2)
+
+extension ZPTabViewStyle.ZPTabViewType: CaseIterable {
+  // The compiler won't synthesize support with the UNRECOGNIZED case.
+  static var allCases: [ZPTabViewStyle.ZPTabViewType] = [
+    .segment,
+    .tab,
+  ]
+}
+
+#endif  // swift(>=4.2)
 
 struct ZPSizeAttribute {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
@@ -1794,9 +1816,6 @@ struct ZPItem {
   /// Clears the value of `animation`. Subsequent reads from it will return its default value.
   mutating func clearAnimation() {self._animation = nil}
 
-  ////TO DO: Fix this case later (Item should not have screen id's)
-  var screenID: String = String()
-
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
   init() {}
@@ -1908,6 +1927,8 @@ struct ZPColorRGB {
   // methods supported on all messages.
 
   var colorUid: String = String()
+
+  var rUid: String = String()
 
   var r: Int32 = 0
 
@@ -2393,8 +2414,8 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     8: .same(proto: "scrollStyle"),
     9: .same(proto: "textStyle"),
     10: .same(proto: "sectionStyle"),
-    11: .same(proto: "separatorType"),
-    12: .same(proto: "tabViewType"),
+    11: .same(proto: "tabViewStyle"),
+    12: .same(proto: "separatorType"),
     13: .same(proto: "cornerRadius"),
   ]
 
@@ -2409,8 +2430,8 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     var _scrollStyle: ZPScrollStyle? = nil
     var _textStyle: ZPTextStyle? = nil
     var _sectionStyle: ZPListSectionStyle? = nil
+    var _tabViewStyle: ZPTabViewStyle? = nil
     var _separatorType: ZPItemStyle.ZPSeparatorType = .line
-    var _tabViewType: ZPItemStyle.ZPTabViewType = .segment
     var _cornerRadius: ZPItemStyle.ZPItemCornerRadius? = nil
 
     static let defaultInstance = _StorageClass()
@@ -2428,8 +2449,8 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
       _scrollStyle = source._scrollStyle
       _textStyle = source._textStyle
       _sectionStyle = source._sectionStyle
+      _tabViewStyle = source._tabViewStyle
       _separatorType = source._separatorType
-      _tabViewType = source._tabViewType
       _cornerRadius = source._cornerRadius
     }
   }
@@ -2459,8 +2480,8 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
         case 8: try { try decoder.decodeSingularMessageField(value: &_storage._scrollStyle) }()
         case 9: try { try decoder.decodeSingularMessageField(value: &_storage._textStyle) }()
         case 10: try { try decoder.decodeSingularMessageField(value: &_storage._sectionStyle) }()
-        case 11: try { try decoder.decodeSingularEnumField(value: &_storage._separatorType) }()
-        case 12: try { try decoder.decodeSingularEnumField(value: &_storage._tabViewType) }()
+        case 11: try { try decoder.decodeSingularMessageField(value: &_storage._tabViewStyle) }()
+        case 12: try { try decoder.decodeSingularEnumField(value: &_storage._separatorType) }()
         case 13: try { try decoder.decodeSingularMessageField(value: &_storage._cornerRadius) }()
         default: break
         }
@@ -2500,11 +2521,11 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
       if let v = _storage._sectionStyle {
         try visitor.visitSingularMessageField(value: v, fieldNumber: 10)
       }
-      if _storage._separatorType != .line {
-        try visitor.visitSingularEnumField(value: _storage._separatorType, fieldNumber: 11)
+      if let v = _storage._tabViewStyle {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 11)
       }
-      if _storage._tabViewType != .segment {
-        try visitor.visitSingularEnumField(value: _storage._tabViewType, fieldNumber: 12)
+      if _storage._separatorType != .line {
+        try visitor.visitSingularEnumField(value: _storage._separatorType, fieldNumber: 12)
       }
       if let v = _storage._cornerRadius {
         try visitor.visitSingularMessageField(value: v, fieldNumber: 13)
@@ -2528,8 +2549,8 @@ extension ZPItemStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
         if _storage._scrollStyle != rhs_storage._scrollStyle {return false}
         if _storage._textStyle != rhs_storage._textStyle {return false}
         if _storage._sectionStyle != rhs_storage._sectionStyle {return false}
+        if _storage._tabViewStyle != rhs_storage._tabViewStyle {return false}
         if _storage._separatorType != rhs_storage._separatorType {return false}
-        if _storage._tabViewType != rhs_storage._tabViewType {return false}
         if _storage._cornerRadius != rhs_storage._cornerRadius {return false}
         return true
       }
@@ -2546,13 +2567,6 @@ extension ZPItemStyle.ZPSeparatorType: SwiftProtobuf._ProtoNameProviding {
     1: .same(proto: "dot"),
     2: .same(proto: "space"),
     3: .same(proto: "dashed"),
-  ]
-}
-
-extension ZPItemStyle.ZPTabViewType: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    0: .same(proto: "segment"),
-    1: .same(proto: "tab"),
   ]
 }
 
@@ -3030,6 +3044,51 @@ extension ZPListSectionStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
   }
 }
 
+extension ZPTabViewStyle: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = "ZPTabViewStyle"
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "segmentToSelect"),
+    2: .same(proto: "tabViewType"),
+  ]
+
+  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      // The use of inline closures is to circumvent an issue where the compiler
+      // allocates stack space for every case branch when no optimizations are
+      // enabled. https://github.com/apple/swift-protobuf/issues/1034
+      switch fieldNumber {
+      case 1: try { try decoder.decodeSingularInt32Field(value: &self.segmentToSelect) }()
+      case 2: try { try decoder.decodeSingularEnumField(value: &self.tabViewType) }()
+      default: break
+      }
+    }
+  }
+
+  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if self.segmentToSelect != 0 {
+      try visitor.visitSingularInt32Field(value: self.segmentToSelect, fieldNumber: 1)
+    }
+    if self.tabViewType != .segment {
+      try visitor.visitSingularEnumField(value: self.tabViewType, fieldNumber: 2)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  static func ==(lhs: ZPTabViewStyle, rhs: ZPTabViewStyle) -> Bool {
+    if lhs.segmentToSelect != rhs.segmentToSelect {return false}
+    if lhs.tabViewType != rhs.tabViewType {return false}
+    if lhs.unknownFields != rhs.unknownFields {return false}
+    return true
+  }
+}
+
+extension ZPTabViewStyle.ZPTabViewType: SwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "segment"),
+    1: .same(proto: "tab"),
+  ]
+}
+
 extension ZPSizeAttribute: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = "ZPSizeAttribute"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
@@ -3434,7 +3493,6 @@ extension ZPItem: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBas
     6: .same(proto: "items"),
     7: .same(proto: "input"),
     8: .same(proto: "animation"),
-    9: .same(proto: "screenId"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -3451,7 +3509,6 @@ extension ZPItem: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBas
       case 6: try { try decoder.decodeRepeatedMessageField(value: &self.items) }()
       case 7: try { try decoder.decodeSingularMessageField(value: &self._input) }()
       case 8: try { try decoder.decodeSingularMessageField(value: &self._animation) }()
-      case 9: try { try decoder.decodeSingularStringField(value: &self.screenID) }()
       default: break
       }
     }
@@ -3482,9 +3539,6 @@ extension ZPItem: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBas
     if let v = self._animation {
       try visitor.visitSingularMessageField(value: v, fieldNumber: 8)
     }
-    if !self.screenID.isEmpty {
-      try visitor.visitSingularStringField(value: self.screenID, fieldNumber: 9)
-    }
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -3497,7 +3551,6 @@ extension ZPItem: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBas
     if lhs.items != rhs.items {return false}
     if lhs._input != rhs._input {return false}
     if lhs._animation != rhs._animation {return false}
-    if lhs.screenID != rhs.screenID {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
@@ -3611,10 +3664,11 @@ extension ZPColorRGB: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
   static let protoMessageName: String = "ZPColorRGB"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "color_uid"),
-    2: .same(proto: "r"),
-    3: .same(proto: "g"),
-    4: .same(proto: "b"),
-    5: .same(proto: "a"),
+    2: .standard(proto: "r_uid"),
+    3: .same(proto: "r"),
+    4: .same(proto: "g"),
+    5: .same(proto: "b"),
+    6: .same(proto: "a"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -3624,10 +3678,11 @@ extension ZPColorRGB: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
       // enabled. https://github.com/apple/swift-protobuf/issues/1034
       switch fieldNumber {
       case 1: try { try decoder.decodeSingularStringField(value: &self.colorUid) }()
-      case 2: try { try decoder.decodeSingularInt32Field(value: &self.r) }()
-      case 3: try { try decoder.decodeSingularInt32Field(value: &self.g) }()
-      case 4: try { try decoder.decodeSingularInt32Field(value: &self.b) }()
-      case 5: try { try decoder.decodeSingularFloatField(value: &self.a) }()
+      case 2: try { try decoder.decodeSingularStringField(value: &self.rUid) }()
+      case 3: try { try decoder.decodeSingularInt32Field(value: &self.r) }()
+      case 4: try { try decoder.decodeSingularInt32Field(value: &self.g) }()
+      case 5: try { try decoder.decodeSingularInt32Field(value: &self.b) }()
+      case 6: try { try decoder.decodeSingularFloatField(value: &self.a) }()
       default: break
       }
     }
@@ -3637,23 +3692,27 @@ extension ZPColorRGB: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
     if !self.colorUid.isEmpty {
       try visitor.visitSingularStringField(value: self.colorUid, fieldNumber: 1)
     }
+    if !self.rUid.isEmpty {
+      try visitor.visitSingularStringField(value: self.rUid, fieldNumber: 2)
+    }
     if self.r != 0 {
-      try visitor.visitSingularInt32Field(value: self.r, fieldNumber: 2)
+      try visitor.visitSingularInt32Field(value: self.r, fieldNumber: 3)
     }
     if self.g != 0 {
-      try visitor.visitSingularInt32Field(value: self.g, fieldNumber: 3)
+      try visitor.visitSingularInt32Field(value: self.g, fieldNumber: 4)
     }
     if self.b != 0 {
-      try visitor.visitSingularInt32Field(value: self.b, fieldNumber: 4)
+      try visitor.visitSingularInt32Field(value: self.b, fieldNumber: 5)
     }
     if self.a != 0 {
-      try visitor.visitSingularFloatField(value: self.a, fieldNumber: 5)
+      try visitor.visitSingularFloatField(value: self.a, fieldNumber: 6)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
   static func ==(lhs: ZPColorRGB, rhs: ZPColorRGB) -> Bool {
     if lhs.colorUid != rhs.colorUid {return false}
+    if lhs.rUid != rhs.rUid {return false}
     if lhs.r != rhs.r {return false}
     if lhs.g != rhs.g {return false}
     if lhs.b != rhs.b {return false}
