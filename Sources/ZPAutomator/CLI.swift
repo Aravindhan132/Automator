@@ -46,13 +46,7 @@ public struct CLI {
             let projectPath = arguments[2]
             if let directoryPath = try? shellOut(to: "find . -type d -name" , arguments: ["CodeGeneration"]) {
                 print("entered" , directoryPath)
-            //    if let created = try? createNewPlatformProject2(directoryPath) {
-            //                if let comments2 = try? shellOut(to:  "cd \(projectPath) && pod install", arguments: [""]) {
-            //                         print(comments2)
-            //                }
-            //    } 
-
-               do {
+                do {
                     let created = try createNewPlatformProject2(directoryPath)
                     print(created)
                } catch {
