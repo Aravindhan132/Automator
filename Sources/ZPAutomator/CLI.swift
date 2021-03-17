@@ -61,6 +61,9 @@ public struct CLI {
             } else {
                 print("path not found")
             }
+
+        case "--version":
+            print("1.0.0")
                  
             
         default:
