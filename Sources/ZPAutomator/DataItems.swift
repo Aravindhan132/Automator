@@ -42,6 +42,8 @@ class DataItemsGenerator {
 
                 public var listDataSource: ZBListProtocol? = nil
 
+                public var maxLetters: Int? = nil
+
                 public static var shared: ZPDataItem {
                     let datamodel = ZPDataItem.init()
                     return datamodel

@@ -146,7 +146,6 @@ extension ZPScreen {
                     prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
                 } 
                  else if eachitem.itemType.isCustomHolderView {
-                    print(eachitem.key , eachitem.itemType)
                     model.originalitems.append(eachitem.key)
                     model.items.append("\(eachitem.key)")
                     prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
@@ -181,7 +180,6 @@ extension ZPScreen {
                     prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)
                 } 
                 else if eachitem.itemType.isCustomHolderView {
-                    print(eachitem.key , eachitem.itemType)
                     model.originalitems.append(eachitem.key)
                     model.items.append("\(eachitem.key)")
                     prepareDynamicItems(item: eachitem , model: &model , patternName: patternName)

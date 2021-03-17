@@ -23,16 +23,43 @@ public struct CLI {
         case "install":
             try platformInstall()
 
+        case "rm":
+            UserDefaults.standard.set(nil, forKey: "path")
+            print("Account removed Successfully 🛠 ")
+
+        case "auth":
+            UserDefaults.standard.set(arguments[2], forKey: "path")
+            print("Account added Successfully 📩 📩 📩")
+
+        case "profile":
+            
+            if let profile = UserDefaults.standard.string(forKey: "path") {
+                print("Your account located at 🔎 ")
+                print(profile)
+            } else {
+                print("Not Account Linked ಠ_ಠ")
+            }
+            
+
         case ".dev":
             print("Development Mode")
             let projectPath = arguments[2]
             if let directoryPath = try? shellOut(to: "find . -type d -name" , arguments: ["CodeGeneration"]) {
-                print(directoryPath)
-               if let created = try? createNewPlatformProject2(directoryPath) {
-                           if let comments2 = try? shellOut(to:  "cd \(projectPath) && pod install", arguments: [""]) {
-                                    print(comments2)
-                           }
+                print("entered" , directoryPath)
+            //    if let created = try? createNewPlatformProject2(directoryPath) {
+            //                if let comments2 = try? shellOut(to:  "cd \(projectPath) && pod install", arguments: [""]) {
+            //                         print(comments2)
+            //                }
+            //    } 
+
+               do {
+                    let created = try createNewPlatformProject2(directoryPath)
+                    print(created)
+               } catch {
+                    print("Uncompleted Completion")
                }
+            } else {
+                print("path not found")
             }
                  
             

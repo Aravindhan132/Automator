@@ -5,9 +5,10 @@ import Foundation
 class APIRequester {
 
     static func triggerLatestUIJSON(onCompletion: ((ZPApp) -> ())? = nil) {
-        if let url = URL(string: "http://demo1061542.mockable.io/list_grid") {
-                URLSession.shared.dataTask(with: url) { data, response, error in
-                    if let data = data {
+    //http://demo1061542.mockable.io/list_grid
+        if let location = UserDefaults.standard.string(forKey: "path") , let url = URL(string: location) {
+                let datatask = URLSession.shared.dataTask(with: url) { data, response, error in
+                     if let data = data {
                         do {
                             let model = try ZPApp(jsonUTF8Data: data)
                             print("✅ ✅ Successfully Serialized Model ✅ ✅" , data)
@@ -19,8 +20,14 @@ class APIRequester {
                     } else {
                         print("Un-Formated Data")
                     }
-                }.resume()
+                     
+                }
+                
+                datatask.resume()
+                
                 guard let sleeping = try? shellOut(to: "sleep", arguments: ["5"]) else {return}
+            } else {
+                print("No Account Linked")
             }
     }
 
