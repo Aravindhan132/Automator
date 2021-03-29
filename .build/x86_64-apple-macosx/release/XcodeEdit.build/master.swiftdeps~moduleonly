@@ -1,0 +1,12 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "b5447376a869e61a06190ec93f6a86f2"
+build_time: [1615993444, 637655000]
+inputs:
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/XcodeEdit/Sources/XcodeEdit/AllObjects.swift": [9223372036, 854775807]
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/XcodeEdit/Sources/XcodeEdit/Extensions.swift": [9223372036, 854775807]
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/XcodeEdit/Sources/XcodeEdit/PBXIdentifier.swift": [9223372036, 854775807]
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/XcodeEdit/Sources/XcodeEdit/PBXObject+Fields.swift": [9223372036, 854775807]
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/XcodeEdit/Sources/XcodeEdit/PBXObject.swift": [9223372036, 854775807]
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/XcodeEdit/Sources/XcodeEdit/Serialization.swift": [9223372036, 854775807]
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/XcodeEdit/Sources/XcodeEdit/XCProjectFile+Rswift.swift": [9223372036, 854775807]
+  "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/.build/checkouts/XcodeEdit/Sources/XcodeEdit/XCProjectFile.swift": [9223372036, 854775807]

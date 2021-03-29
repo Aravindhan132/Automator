@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
 options: "e719568a7db83948a1f0f8e5252deeae"
-build_time: [1615964735, 340783000]
+build_time: [1615993735, 222740000]
 inputs:
   "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/APIRequester.swift": [9223372036, 854775807]
   "/Users/aravind-zt336/Downloads/AUTOMATOR_GIT/Sources/ZPAutomator/CLI.swift": [9223372036, 854775807]

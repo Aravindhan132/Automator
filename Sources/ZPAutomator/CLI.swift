@@ -48,6 +48,7 @@ public struct CLI {
                 print("entered" , directoryPath)
                 do {
                     let created = try createNewPlatformProject2(directoryPath)
+                    
                     print(created)
                } catch {
                     print("Uncompleted Completion")

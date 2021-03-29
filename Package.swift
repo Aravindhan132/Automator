@@ -10,7 +10,7 @@ let package = Package(
     dependencies: [
         .package(name: "ShellOut", url: "https://github.com/johnsundell/shellout.git", from: "2.3.0"),
         .package(name: "SwiftProtobuf", url: "https://github.com/apple/swift-protobuf", from: "1.15.0"),
-    ],
+     ],
     targets: [
         .target(
             name: "ZPAutomator",
